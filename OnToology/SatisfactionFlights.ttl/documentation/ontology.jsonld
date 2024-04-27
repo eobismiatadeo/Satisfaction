@@ -1,0 +1,1795 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasPlane"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Plane"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/val"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "1"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/val"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ratingValue"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Company"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasCompany"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/VeryPoor"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "If the value of the rating is 3 to 4 is a Poor Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PoorReviewRating"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid33"
+    }, {
+      "@id" : "_:genid31"
+    }, {
+      "@id" : "_:genid27"
+    }, {
+      "@id" : "_:genid23"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid35"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/val"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "5"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid27",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/val"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "2"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/value"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/val"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ratingValue"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Poor"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "If the value of the rating is 5 to 7 is a good review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "GoodReviewRating"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid48"
+    }, {
+      "@id" : "_:genid46"
+    }, {
+      "@id" : "_:genid42"
+    }, {
+      "@id" : "_:genid38"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid50"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/val"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "8"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onDataRange" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/title"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/val"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "4"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/val"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ratingValue"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/name"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Good"
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "If the value of the rating is 8 to 10 is a Very Good Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "VeryGoodRating"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid63"
+    }, {
+      "@id" : "_:genid61"
+    }, {
+      "@id" : "_:genid57"
+    }, {
+      "@id" : "_:genid53"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid65"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/val"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "10"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/val"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "7"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "If the value of the rating of the review is 1 to 3 is a very poor review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "VeryPoorReview"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid18"
+    }, {
+      "@id" : "_:genid16"
+    }, {
+      "@id" : "_:genid12"
+    }, {
+      "@id" : "_:genid8"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid20"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/val"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ratingValue"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/r"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/VeryGood"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/val"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "3"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThan"
+  } ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This ontology measures the degree of satisfaction of the people surveyed with air travel.\n\nIt is created by Alejandro Tadeo Andreu and Eric Obis Moreno"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Airbus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Is the manufacturer of the plane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Airbus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Airbus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Plane"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Boeing"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/BodyReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "is the body of the review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BodyReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Review"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Boeing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "is the manufacturer of the plane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Boeing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Boeing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Plane"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Business",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "travel for Business"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Business"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Traveler"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/CoupleLeisure"
+  }, {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/FamilyLeisure"
+  }, {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/SoloLeisure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/BusinessClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Seat in business class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BusinessClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Seat"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/EconomyClass"
+  }, {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/FirstClass"
+  }, {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/PremiumEconomy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Company",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is an airline company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Is the country of the traveler"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/CoupleLeisure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "travel for Couple Leisure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CoupleLeisure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Traveler"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/FamilyLeisure"
+  }, {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/SoloLeisure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Date",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Is the date of the travel and the date of de review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/EconomyClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Seat in economy class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "EconomyClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Seat"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/FirstClass"
+  }, {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/PremiumEconomy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/FamilyLeisure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "travel for Family Leisure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FamilyLeisure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Traveler"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/SoloLeisure"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/FirstClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Seat in first class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "FirstClass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Seat"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/PremiumEconomy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Flight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is the flight information, it provides the origin and destination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Good",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is whether the flight rating is good"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Good"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Poor"
+  }, {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/VeryGood"
+  }, {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/VeryPoor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Plane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is the information of the plane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Plane"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Poor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is whether the flight rating is poor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Poor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/VeryGood"
+  }, {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/VeryPoor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/PremiumEconomy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Seat in Premium Economy class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PremiumEconomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Seat"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Qatar_Airways",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Is an Airline company of Qatar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Qatar_Airways"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Qatar_Airways"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Company"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Ryanair"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Is the rating of the review of the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Recomended",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The review recommends traveling with that company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Recommended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Review",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "is the title of the review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Ryanair",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Is an airplane company of Ireland"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ryanair"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Ryanair"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Company"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Seat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It's the traveler's seat."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Seat"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/SoloLeisure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "travel for Solo Leisure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SoloLeisure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Traveler"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Traveler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Information of the traveler"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Traveler"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Verified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is the review verified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Verified"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/VeryGood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is whether the flight rating is very good"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "VeryGood"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/VeryPoor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/VeryPoor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "It is whether the flight rating is very poor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "VeryPoor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/body",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Description of the review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/BodyReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "body"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/body1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/body" : [ {
+    "@value" : "I have sent 5 emails and have only received 2 automatic response emails after initiating our complaint 10 weeks ago. I have sent all of the relevant documentation to support our claim for a refund. Our group of 3 booked adjoining Exit Row seats on the Upper Deck of an A380 from Doha to Perth"
+  } ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasDate" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/date1"
+  } ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasFlight" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/travel1"
+  } ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasRating" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating1"
+  } ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasRecommended" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/value2"
+  } ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasSeat" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/seat1"
+  } ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasTraveler" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/traveler1"
+  } ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasVerified" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/isVerified"
+  } ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/title" : [ {
+    "@value" : "\"no attempt to address our complaint\""
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/BodyReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The first body of review with his title"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "body1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/country1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/nameCountry" : [ {
+    "@value" : "Spain"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This country is Spain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "country1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Spain"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/country2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/nameCountry" : [ {
+    "@value" : "Australia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This country is Australia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "country2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Australia"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/country3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/nameCountry" : [ {
+    "@value" : "Portugal"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/date1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/day" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "29"
+  } ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/month" : [ {
+    "@value" : "February"
+  } ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2024"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Date of the review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "dateReview1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/datefligth1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/month" : [ {
+    "@value" : "November"
+  } ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2023"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Date of the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "dateFlight1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/day",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Day 1 to 31"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "day"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/destination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Destination of the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "destination"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasCompany",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "the flight is operated by a company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCompany"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Company"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The traveler is from a country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Traveler"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasCountry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Country"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasDate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The review from the traveler has date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasDate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasDateFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The flight has a date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasDateFlight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Date"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasFlight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The review is from one flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasFlight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Flight"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasPlane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Company has plane for flights"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasPlane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Plane"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasRating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The review has a rating valoration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasRating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasRecommended",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Is the flight recommended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasRecommended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Recomended"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasReview",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The traveler make a review for his flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Traveler"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasReview"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Review"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasTraveler"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasSeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The traveler do a review from  a Seat for the travel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasSeat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Seat"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasTravelPlane",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The plane from the travel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasTravelPlane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Plane"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasTraveler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The review has a traveler"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasTraveler"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Traveler"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasVerified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The review is verified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "hasVerified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Verified"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/isVerified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/statVerify" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Verified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The review is verified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isVerified"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/modelAirbus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Model of plane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Airbus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "modelAirbus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/modelBoeing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "model of plane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Boeing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "modelBoeing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/month",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Month of the travel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "month"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Name of traveler or name of country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Traveler"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "nameTraveler"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/nameCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Name of the country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "nameCountry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/notVerified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/statVerify" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Verified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The review is not verified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "notVerified"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/origin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Name of the city origin the travel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "origin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/plane1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/modelAirbus" : [ {
+    "@value" : "A380"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Airbus"
+  }, {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Plane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "First type of plane A380 from Airbus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "plane1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Airbus_A380"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/qatarArways",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasPlane" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/plane1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Company"
+  }, {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Qatar_Airways"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Qatar arways instance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "qatarArways"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/r",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ratingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  }, {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/VeryPoor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Rating with the value is 1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "rating1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ratingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "10"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The value of rating is 10"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "rating10"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ratingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  }, {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/VeryPoor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "rating value 2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "rating2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ratingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "3"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The value of rating is 3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "rating3"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ratingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "4"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The value of rating is 4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "rating4"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ratingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "5"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The value of rating is 5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "rating5"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ratingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "6"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The value of rating is 6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "rating6"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ratingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "7"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The value of rating is 7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "rating7"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ratingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "8"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The value of rating is 8"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "rating8"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ratingValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "9"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The value of rating is 9"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "rating9"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ratingValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Rating Value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ratingValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#int"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ryanair",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Company"
+  }, {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Ryanair"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The ryanair instance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ryanair"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/seat1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/EconomyClass"
+  }, {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Seat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Seat of economy class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "seat1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/statVerify",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is the state that the review is verified or not"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Verified"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "statVerify"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/surname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Surname of the traveler"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Traveler"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "surname"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Title of the review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Review"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "title"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/travel1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/destination" : [ {
+    "@value" : "Perth"
+  } ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasCompany" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/qatarArways"
+  } ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasDateFlight" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/datefligth1"
+  } ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasTravelPlane" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/plane1"
+  } ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/origin" : [ {
+    "@value" : "Doha"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "First travel From Doha to Perth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "travel1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/traveler1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasCountry" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/country2"
+  } ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasReview" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/body1"
+  } ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/name" : [ {
+    "@value" : "Wayne"
+  } ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/surname" : [ {
+    "@value" : "Burgess"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Business"
+  }, {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Traveler"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Information of the traveler 1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "traveler1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/val",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Value true or false if the travel is recommended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Recomended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "recomendedValue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/value1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Recomended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "True value for recomended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isRecomended"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/value2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Recomended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "False value because is not recomended"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "notRecomended"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/year",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Year of the flight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+} ]
