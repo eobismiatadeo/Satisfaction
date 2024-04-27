@@ -1,0 +1,946 @@
+@prefix : <http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@base <http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/> .
+
+<http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights> rdf:type owl:Ontology ;
+                                                                             rdfs:comment """This ontology measures the degree of satisfaction of the people surveyed with air travel.
+
+It is created by Alejandro Tadeo Andreu and Eric Obis Moreno"""@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasCompany
+:hasCompany rdf:type owl:ObjectProperty ;
+            rdfs:domain :Flight ;
+            rdfs:range :Company ;
+            rdfs:comment "the flight is operated by a company" ;
+            rdfs:label "hasCompany" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasCountry
+:hasCountry rdf:type owl:ObjectProperty ;
+            rdfs:domain :Traveler ;
+            rdfs:range :Country ;
+            rdfs:comment "The traveler is from a country" ;
+            rdfs:label "hasCountry" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasDate
+:hasDate rdf:type owl:ObjectProperty ;
+         rdfs:domain :Review ;
+         rdfs:range :Date ;
+         rdfs:comment "The review from the traveler has date" ;
+         rdfs:label "hasDate" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasDateFlight
+:hasDateFlight rdf:type owl:ObjectProperty ;
+               rdfs:domain :Flight ;
+               rdfs:range :Date ;
+               rdfs:comment "The flight has a date" ;
+               rdfs:label "hasDateFlight" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasFlight
+:hasFlight rdf:type owl:ObjectProperty ;
+           rdfs:domain :Review ;
+           rdfs:range :Flight ;
+           rdfs:comment "The review is from one flight"@en ;
+           rdfs:label "hasFlight"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasPlane
+:hasPlane rdf:type owl:ObjectProperty ;
+          rdfs:domain :Company ;
+          rdfs:range :Plane ;
+          rdfs:comment "Company has plane for flights" ;
+          rdfs:label "hasPlane" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasRating
+:hasRating rdf:type owl:ObjectProperty ;
+           rdfs:domain :Review ;
+           rdfs:range :Rating ;
+           rdfs:comment "The review has a rating valoration" ;
+           rdfs:label "hasRating" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasRecommended
+:hasRecommended rdf:type owl:ObjectProperty ;
+                rdfs:domain :Review ;
+                rdfs:range :Recomended ;
+                rdfs:comment "Is the flight recommended" ;
+                rdfs:label "hasRecommended" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasReview
+:hasReview rdf:type owl:ObjectProperty ;
+           owl:inverseOf :hasTraveler ;
+           rdfs:domain :Traveler ;
+           rdfs:range :Review ;
+           rdfs:comment "The traveler make a review for his flight" ;
+           rdfs:label "hasReview" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasSeat
+:hasSeat rdf:type owl:ObjectProperty ;
+         rdfs:domain :Review ;
+         rdfs:range :Seat ;
+         rdfs:comment "The traveler do a review from  a Seat for the travel." ;
+         rdfs:label "hasSeat" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasTravelPlane
+:hasTravelPlane rdf:type owl:ObjectProperty ;
+                rdfs:domain :Flight ;
+                rdfs:range :Plane ;
+                rdfs:comment "The plane from the travel"@en ;
+                rdfs:label "hasTravelPlane"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasTraveler
+:hasTraveler rdf:type owl:ObjectProperty ;
+             rdfs:domain :Review ;
+             rdfs:range :Traveler ;
+             rdfs:comment "The review has a traveler" ;
+             rdfs:label "hasTraveler" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasVerified
+:hasVerified rdf:type owl:ObjectProperty ;
+             rdfs:domain :Review ;
+             rdfs:range :Verified ;
+             rdfs:comment "The review is verified" ;
+             rdfs:label "hasVerified" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/body
+:body rdf:type owl:DatatypeProperty ;
+      rdfs:domain :BodyReview ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Description of the review"@en ;
+      rdfs:label "body"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/day
+:day rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Date ;
+     rdfs:range xsd:int ;
+     rdfs:comment "Day 1 to 31"@en ;
+     rdfs:label "day"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/destination
+:destination rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Flight ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Destination of the flight"@en ;
+             rdfs:label "destination"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/modelAirbus
+:modelAirbus rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Airbus ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Model of plane"@en ;
+             rdfs:label "modelAirbus"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/modelBoeing
+:modelBoeing rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Boeing ;
+             rdfs:range xsd:string ;
+             rdfs:comment "model of plane"@en ;
+             rdfs:label "modelBoeing"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/month
+:month rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Date ;
+       rdfs:range xsd:string ;
+       rdfs:comment "Month of the travel"@en ;
+       rdfs:label "month"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Traveler ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Name of traveler or name of country"@en ;
+      rdfs:label "nameTraveler"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/nameCountry
+:nameCountry rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Country ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Name of the country"@en ;
+             rdfs:label "nameCountry"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/origin
+:origin rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Flight ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Name of the city origin the travel"@en ;
+        rdfs:label "origin"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ratingValue
+:ratingValue rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Rating ;
+             rdfs:range xsd:int ;
+             rdfs:comment "Rating Value"@en ;
+             rdfs:label "ratingValue"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/statVerify
+:statVerify rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Verified ;
+            rdfs:range xsd:boolean ;
+            rdfs:comment "This is the state that the review is verified or not"@en ;
+            rdfs:label "statVerify"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/surname
+:surname rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Traveler ;
+         rdfs:range xsd:string ;
+         rdfs:comment "Surname of the traveler"@en ;
+         rdfs:label "surname"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Review ;
+       rdfs:range xsd:string ;
+       rdfs:comment "Title of the review"@en ;
+       rdfs:label "title"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/value
+:value rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Recomended ;
+       rdfs:range xsd:boolean ;
+       rdfs:comment "Value true or false if the travel is recommended"@en ;
+       rdfs:label "recomendedValue"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/year
+:year rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Date ;
+      rdfs:range xsd:integer ;
+      rdfs:comment "Year of the flight"@en ;
+      rdfs:label "year"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Airbus
+:Airbus rdf:type owl:Class ;
+        rdfs:subClassOf :Plane ;
+        owl:disjointWith :Boeing ;
+        rdfs:comment "Is the manufacturer of the plane" ;
+        rdfs:label "Airbus" ;
+        rdfs:sameAs "https://dbpedia.org/page/Airbus" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/BodyReview
+:BodyReview rdf:type owl:Class ;
+            rdfs:subClassOf :Review ;
+            rdfs:comment "is the body of the review" ;
+            rdfs:label "BodyReview" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Boeing
+:Boeing rdf:type owl:Class ;
+        rdfs:subClassOf :Plane ;
+        rdfs:comment "is the manufacturer of the plane" ;
+        rdfs:label "Boeing" ;
+        rdfs:sameAs "https://dbpedia.org/page/Boeing" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Business
+:Business rdf:type owl:Class ;
+          rdfs:subClassOf :Traveler ;
+          owl:disjointWith :CoupleLeisure ,
+                           :FamilyLeisure ,
+                           :SoloLeisure ;
+          rdfs:comment "travel for Business" ;
+          rdfs:label "Business" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/BusinessClass
+:BusinessClass rdf:type owl:Class ;
+               rdfs:subClassOf :Seat ;
+               owl:disjointWith :EconomyClass ,
+                                :FirstClass ,
+                                :PremiumEconomy ;
+               rdfs:comment "Seat in business class" ;
+               rdfs:label "BusinessClass" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Company
+:Company rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasPlane ;
+                           owl:someValuesFrom :Plane
+                         ] ;
+         rdfs:comment "This is an airline company"@en ;
+         rdfs:label "Company"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Country
+:Country rdf:type owl:Class ;
+         rdfs:comment "Is the country of the traveler" ;
+         rdfs:label "Country" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/CoupleLeisure
+:CoupleLeisure rdf:type owl:Class ;
+               rdfs:subClassOf :Traveler ;
+               owl:disjointWith :FamilyLeisure ,
+                                :SoloLeisure ;
+               rdfs:comment "travel for Couple Leisure" ;
+               rdfs:label "CoupleLeisure" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Date
+:Date rdf:type owl:Class ;
+      rdfs:comment "Is the date of the travel and the date of de review" ;
+      rdfs:label "Date" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/EconomyClass
+:EconomyClass rdf:type owl:Class ;
+              rdfs:subClassOf :Seat ;
+              owl:disjointWith :FirstClass ,
+                               :PremiumEconomy ;
+              rdfs:comment "Seat in economy class" ;
+              rdfs:label "EconomyClass" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/FamilyLeisure
+:FamilyLeisure rdf:type owl:Class ;
+               rdfs:subClassOf :Traveler ;
+               owl:disjointWith :SoloLeisure ;
+               rdfs:comment "travel for Family Leisure" ;
+               rdfs:label "FamilyLeisure" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/FirstClass
+:FirstClass rdf:type owl:Class ;
+            rdfs:subClassOf :Seat ;
+            owl:disjointWith :PremiumEconomy ;
+            rdfs:comment "Seat in first class" ;
+            rdfs:label "FirstClass" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Flight
+:Flight rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasCompany ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Company
+                        ] ;
+        rdfs:comment "It is the flight information, it provides the origin and destination" ;
+        rdfs:label "Flight" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Good
+:Good rdf:type owl:Class ;
+      rdfs:subClassOf :Rating ;
+      owl:disjointWith :Poor ,
+                       :VeryGood ,
+                       :VeryPoor ;
+      rdfs:comment "It is whether the flight rating is good" ;
+      rdfs:label "Good"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Plane
+:Plane rdf:type owl:Class ;
+       rdfs:comment "It is the information of the plane" ;
+       rdfs:label "Plane" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Poor
+:Poor rdf:type owl:Class ;
+      rdfs:subClassOf :Rating ;
+      owl:disjointWith :VeryGood ,
+                       :VeryPoor ;
+      rdfs:comment "It is whether the flight rating is poor" ;
+      rdfs:label "Poor" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/PremiumEconomy
+:PremiumEconomy rdf:type owl:Class ;
+                rdfs:subClassOf :Seat ;
+                rdfs:comment "Seat in Premium Economy class" ;
+                rdfs:label "PremiumEconomy" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Qatar_Airways
+:Qatar_Airways rdf:type owl:Class ;
+               rdfs:subClassOf :Company ;
+               owl:disjointWith :Ryanair ;
+               rdfs:comment "Is an Airline company of Qatar" ;
+               rdfs:label "Qatar_Airways" ;
+               rdfs:sameAs "https://dbpedia.org/page/Qatar_Airways" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating
+:Rating rdf:type owl:Class ;
+        rdfs:comment "Is the rating of the review of the flight" ;
+        rdfs:label "Rating" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Recomended
+:Recomended rdf:type owl:Class ;
+            rdfs:subClassOf [ rdf:type owl:Restriction ;
+                              owl:onProperty :value ;
+                              owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                              owl:onDataRange xsd:boolean
+                            ] ;
+            rdfs:comment "The review recommends traveling with that company" ;
+            rdfs:label "Recommended" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Review
+:Review rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :title ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:string
+                        ] ;
+        rdfs:comment "is the title of the review" ;
+        rdfs:label "Review" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Ryanair
+:Ryanair rdf:type owl:Class ;
+         rdfs:subClassOf :Company ;
+         rdfs:comment "Is an airplane company of Ireland" ;
+         rdfs:label "Ryanair" ;
+         rdfs:sameAs "https://dbpedia.org/page/Ryanair" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Seat
+:Seat rdf:type owl:Class ;
+      rdfs:comment "It's the traveler's seat." ;
+      rdfs:label "Seat" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/SoloLeisure
+:SoloLeisure rdf:type owl:Class ;
+             rdfs:subClassOf :Traveler ;
+             rdfs:comment "travel for Solo Leisure" ;
+             rdfs:label "SoloLeisure" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Traveler
+:Traveler rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :name ;
+                            owl:someValuesFrom xsd:string
+                          ] ;
+          rdfs:comment "Information of the traveler" ;
+          rdfs:label "Traveler" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Verified
+:Verified rdf:type owl:Class ;
+          rdfs:comment "It is the review verified" ;
+          rdfs:label "Verified" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/VeryGood
+:VeryGood rdf:type owl:Class ;
+          rdfs:subClassOf :Rating ;
+          owl:disjointWith :VeryPoor ;
+          rdfs:comment "It is whether the flight rating is very good" ;
+          rdfs:label "VeryGood" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/VeryPoor
+:VeryPoor rdf:type owl:Class ;
+          rdfs:subClassOf :Rating ;
+          rdfs:comment "It is whether the flight rating is very poor" ;
+          rdfs:label "VeryPoor" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/body1
+:body1 rdf:type owl:NamedIndividual ,
+                :BodyReview ;
+       :hasDate :date1 ;
+       :hasFlight :travel1 ;
+       :hasRating :rating1 ;
+       :hasRecommended :value2 ;
+       :hasSeat :seat1 ;
+       :hasTraveler :traveler1 ;
+       :hasVerified :isVerified ;
+       :body "I have sent 5 emails and have only received 2 automatic response emails after initiating our complaint 10 weeks ago. I have sent all of the relevant documentation to support our claim for a refund. Our group of 3 booked adjoining Exit Row seats on the Upper Deck of an A380 from Doha to Perth" ;
+       :title "\"no attempt to address our complaint\"" ;
+       rdfs:comment "The first body of review with his title" ;
+       rdfs:label "body1"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/country1
+:country1 rdf:type owl:NamedIndividual ,
+                   :Country ;
+          :nameCountry "Spain" ;
+          rdfs:comment "This country is Spain"@en ;
+          rdfs:label "country1"@en ;
+          rdfs:sameAs "https://dbpedia.org/page/Spain" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/country2
+:country2 rdf:type owl:NamedIndividual ,
+                   :Country ;
+          :nameCountry "Australia" ;
+          rdfs:comment "This country is Australia"@en ;
+          rdfs:label "country2"@en ;
+          rdfs:sameAs "https://dbpedia.org/page/Australia" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/country3
+:country3 rdf:type owl:NamedIndividual ,
+                   :Country ;
+          :nameCountry "Portugal" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/date1
+:date1 rdf:type owl:NamedIndividual ,
+                :Date ;
+       :day 29 ;
+       :month "February" ;
+       :year 2024 ;
+       rdfs:comment "Date of the review"@en ;
+       rdfs:label "dateReview1"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/datefligth1
+:datefligth1 rdf:type owl:NamedIndividual ,
+                      :Date ;
+             :month "November" ;
+             :year 2023 ;
+             rdfs:comment "Date of the flight"@en ;
+             rdfs:label "dateFlight1"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/isVerified
+:isVerified rdf:type owl:NamedIndividual ,
+                     :Verified ;
+            :statVerify "true"^^xsd:boolean ;
+            rdfs:comment "The review is verified"@en ;
+            rdfs:label "isVerified"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/notVerified
+:notVerified rdf:type owl:NamedIndividual ,
+                      :Verified ;
+             :statVerify "false"^^xsd:boolean ;
+             rdfs:comment "The review is not verified"@en ;
+             rdfs:label "notVerified"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/plane1
+:plane1 rdf:type owl:NamedIndividual ,
+                 :Airbus ,
+                 :Plane ;
+        :modelAirbus "A380" ;
+        rdfs:comment "First type of plane A380 from Airbus" ;
+        rdfs:label "plane1" ;
+        rdfs:sameAs "https://dbpedia.org/page/Airbus_A380" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/qatarArways
+:qatarArways rdf:type owl:NamedIndividual ,
+                      :Company ,
+                      :Qatar_Airways ;
+             :hasPlane :plane1 ;
+             rdfs:comment "Qatar arways instance"@en ;
+             rdfs:label "qatarArways"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating1
+:rating1 rdf:type owl:NamedIndividual ,
+                  :Rating ,
+                  :VeryPoor ;
+         :ratingValue 1 ;
+         rdfs:comment "Rating with the value is 1"@en ;
+         rdfs:label "rating1"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating10
+:rating10 rdf:type owl:NamedIndividual ,
+                   :Rating ;
+          :ratingValue 10 ;
+          rdfs:comment "The value of rating is 10"@en ;
+          rdfs:label "rating10"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating2
+:rating2 rdf:type owl:NamedIndividual ,
+                  :Rating ,
+                  :VeryPoor ;
+         :ratingValue 2 ;
+         rdfs:comment "rating value 2"@en ;
+         rdfs:label "rating2"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating3
+:rating3 rdf:type owl:NamedIndividual ,
+                  :Rating ;
+         :ratingValue 3 ;
+         rdfs:comment "The value of rating is 3"@en ;
+         rdfs:label "rating3"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating4
+:rating4 rdf:type owl:NamedIndividual ,
+                  :Rating ;
+         :ratingValue 4 ;
+         rdfs:comment "The value of rating is 4"@en ;
+         rdfs:label "rating4"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating5
+:rating5 rdf:type owl:NamedIndividual ,
+                  :Rating ;
+         :ratingValue 5 ;
+         rdfs:comment "The value of rating is 5"@en ;
+         rdfs:label "rating5" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating6
+:rating6 rdf:type owl:NamedIndividual ,
+                  :Rating ;
+         :ratingValue 6 ;
+         rdfs:comment "The value of rating is 6"@en ;
+         rdfs:label "rating6"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating7
+:rating7 rdf:type owl:NamedIndividual ,
+                  :Rating ;
+         :ratingValue 7 ;
+         rdfs:comment "The value of rating is 7"@en ;
+         rdfs:label "rating7"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating8
+:rating8 rdf:type owl:NamedIndividual ,
+                  :Rating ;
+         :ratingValue 8 ;
+         rdfs:comment "The value of rating is 8"@en ;
+         rdfs:label "rating8"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/rating9
+:rating9 rdf:type owl:NamedIndividual ,
+                  :Rating ;
+         :ratingValue 9 ;
+         rdfs:comment "The value of rating is 9"@en ;
+         rdfs:label "rating9"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ryanair
+:ryanair rdf:type owl:NamedIndividual ,
+                  :Company ,
+                  :Ryanair ;
+         rdfs:comment "The ryanair instance"@en ;
+         rdfs:label "ryanair"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/seat1
+:seat1 rdf:type owl:NamedIndividual ,
+                :EconomyClass ,
+                :Seat ;
+       rdfs:comment "Seat of economy class"@en ;
+       rdfs:label "seat1"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/travel1
+:travel1 rdf:type owl:NamedIndividual ,
+                  :Flight ;
+         :hasCompany :qatarArways ;
+         :hasDateFlight :datefligth1 ;
+         :hasTravelPlane :plane1 ;
+         :destination "Perth" ;
+         :origin "Doha" ;
+         rdfs:comment "First travel From Doha to Perth"@en ;
+         rdfs:label "travel1" .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/traveler1
+:traveler1 rdf:type owl:NamedIndividual ,
+                    :Business ,
+                    :Traveler ;
+           :hasCountry :country2 ;
+           :hasReview :body1 ;
+           :name "Wayne" ;
+           :surname "Burgess" ;
+           rdfs:comment "Information of the traveler 1"@en ;
+           rdfs:label "traveler1"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/value1
+:value1 rdf:type owl:NamedIndividual ,
+                 :Recomended ;
+        :value "true"^^xsd:boolean ;
+        rdfs:comment "True value for recomended"@en ;
+        rdfs:label "isRecomended"@en .
+
+
+###  http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/value2
+:value2 rdf:type owl:NamedIndividual ,
+                 :Recomended ;
+        :value "false"^^xsd:boolean ;
+        rdfs:comment "False value because is not recomended"@en ;
+        rdfs:label "notRecomended"@en .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+:r rdf:type swrl:Variable .
+
+:val rdf:type swrl:Variable .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment "If the value of the rating is 5 to 7 is a good review" ;
+   rdfs:label "GoodReviewRating" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :Rating ;
+                           swrl:argument1 :r
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                      swrl:propertyPredicate :ratingValue ;
+                                      swrl:argument1 :r ;
+                                      swrl:argument2 :val
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                 swrl:builtin swrlb:greaterThan ;
+                                                 swrl:arguments [ rdf:type rdf:List ;
+                                                                  rdf:first :val ;
+                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                             rdf:first 4 ;
+                                                                             rdf:rest rdf:nil
+                                                                           ]
+                                                                ]
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                            swrl:builtin swrlb:lessThan ;
+                                                            swrl:arguments [ rdf:type rdf:List ;
+                                                                             rdf:first :val ;
+                                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                                        rdf:first 8 ;
+                                                                                        rdf:rest rdf:nil
+                                                                                      ]
+                                                                           ]
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :Good ;
+                           swrl:argument1 :r
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment "If the value of the rating is 8 to 10 is a Very Good Review" ;
+   rdfs:label "VeryGoodRating" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :Rating ;
+                           swrl:argument1 :r
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                      swrl:propertyPredicate :ratingValue ;
+                                      swrl:argument1 :r ;
+                                      swrl:argument2 :val
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                 swrl:builtin swrlb:greaterThan ;
+                                                 swrl:arguments [ rdf:type rdf:List ;
+                                                                  rdf:first :val ;
+                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                             rdf:first 7 ;
+                                                                             rdf:rest rdf:nil
+                                                                           ]
+                                                                ]
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                            swrl:builtin swrlb:lessThanOrEqual ;
+                                                            swrl:arguments [ rdf:type rdf:List ;
+                                                                             rdf:first :val ;
+                                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                                        rdf:first 10 ;
+                                                                                        rdf:rest rdf:nil
+                                                                                      ]
+                                                                           ]
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :VeryGood ;
+                           swrl:argument1 :r
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment "If the value of the rating of the review is 1 to 3 is a very poor review" ;
+   rdfs:label "VeryPoorReview" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :Rating ;
+                           swrl:argument1 :r
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                      swrl:propertyPredicate :ratingValue ;
+                                      swrl:argument1 :r ;
+                                      swrl:argument2 :val
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                 swrl:builtin swrlb:greaterThanOrEqual ;
+                                                 swrl:arguments [ rdf:type rdf:List ;
+                                                                  rdf:first :val ;
+                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                             rdf:first 1 ;
+                                                                             rdf:rest rdf:nil
+                                                                           ]
+                                                                ]
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                            swrl:builtin swrlb:lessThan ;
+                                                            swrl:arguments [ rdf:type rdf:List ;
+                                                                             rdf:first :val ;
+                                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                                        rdf:first 3 ;
+                                                                                        rdf:rest rdf:nil
+                                                                                      ]
+                                                                           ]
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :VeryPoor ;
+                           swrl:argument1 :r
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment "If the value of the rating is 3 to 4 is a Poor Review" ;
+   rdfs:label "PoorReviewRating" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :Rating ;
+                           swrl:argument1 :r
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:DatavaluedPropertyAtom ;
+                                      swrl:propertyPredicate :ratingValue ;
+                                      swrl:argument1 :r ;
+                                      swrl:argument2 :val
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                 swrl:builtin swrlb:greaterThan ;
+                                                 swrl:arguments [ rdf:type rdf:List ;
+                                                                  rdf:first :val ;
+                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                             rdf:first 2 ;
+                                                                             rdf:rest rdf:nil
+                                                                           ]
+                                                                ]
+                                               ] ;
+                                     rdf:rest [ rdf:type swrl:AtomList ;
+                                                rdf:first [ rdf:type swrl:BuiltinAtom ;
+                                                            swrl:builtin swrlb:lessThan ;
+                                                            swrl:arguments [ rdf:type rdf:List ;
+                                                                             rdf:first :val ;
+                                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                                        rdf:first 5 ;
+                                                                                        rdf:rest rdf:nil
+                                                                                      ]
+                                                                           ]
+                                                          ] ;
+                                                rdf:rest rdf:nil
+                                              ]
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate :Poor ;
+                           swrl:argument1 :r
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
