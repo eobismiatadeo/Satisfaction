@@ -1,0 +1,212 @@
+{
+  "@context" : {
+    "Verified" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Verified"
+    },
+    "hasRating" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasRating",
+      "@type" : "@id"
+    },
+    "Review" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Review"
+    },
+    "origin" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/origin",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Traveler" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Traveler"
+    },
+    "Country" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Country"
+    },
+    "body" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/body",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "destination" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/destination",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Poor" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Poor"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "CoupleLeisure" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/CoupleLeisure"
+    },
+    "hasPlane" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasPlane",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasSeat" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasSeat",
+      "@type" : "@id"
+    },
+    "hasReview" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasReview",
+      "@type" : "@id"
+    },
+    "hasRecommended" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasRecommended",
+      "@type" : "@id"
+    },
+    "FirstClass" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/FirstClass"
+    },
+    "Business" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Business"
+    },
+    "VeryGood" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/VeryGood"
+    },
+    "Good" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Good"
+    },
+    "modelBoeing" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/modelBoeing",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasTravelPlane" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasTravelPlane",
+      "@type" : "@id"
+    },
+    "Date" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Date"
+    },
+    "hasDate" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasDate",
+      "@type" : "@id"
+    },
+    "nameCountry" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/nameCountry",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "name" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasDateFlight" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasDateFlight",
+      "@type" : "@id"
+    },
+    "hasCompany" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasCompany",
+      "@type" : "@id"
+    },
+    "value" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/value",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "surname" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/surname",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasFlight" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasFlight",
+      "@type" : "@id"
+    },
+    "Plane" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Plane"
+    },
+    "Recomended" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Recomended"
+    },
+    "Seat" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Seat"
+    },
+    "hasVerified" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasVerified",
+      "@type" : "@id"
+    },
+    "Qatar_Airways" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Qatar_Airways"
+    },
+    "FamilyLeisure" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/FamilyLeisure"
+    },
+    "Company" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Company"
+    },
+    "Rating" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Rating"
+    },
+    "Ryanair" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Ryanair"
+    },
+    "Airbus" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Airbus"
+    },
+    "ratingValue" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/ratingValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "title" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/title",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "year" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/year",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "VeryPoor" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/VeryPoor"
+    },
+    "Flight" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Flight"
+    },
+    "Boeing" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/Boeing"
+    },
+    "month" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/month",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "EconomyClass" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/EconomyClass"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "day" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/day",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "BodyReview" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/BodyReview"
+    },
+    "SoloLeisure" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/SoloLeisure"
+    },
+    "BusinessClass" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/BusinessClass"
+    },
+    "PremiumEconomy" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/PremiumEconomy"
+    },
+    "modelAirbus" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/modelAirbus",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "statVerify" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/statVerify",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasCountry" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasCountry",
+      "@type" : "@id"
+    },
+    "hasTraveler" : {
+      "@id" : "http://www.semanticweb.org/eric/ontologies/2024/3/SatisfactionWithFlights/hasTraveler",
+      "@type" : "@id"
+    }
+  }
+}

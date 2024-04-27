@@ -1,0 +1,23 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Poor" "base:BodyReview" "base:Rating" "base:EconomyClass" "base:Business" "base:PremiumEconomy" "base:VeryPoor" "base:FamilyLeisure" "base:Boeing" "base:SoloLeisure" "base:CoupleLeisure" "base:Plane" "base:Company" "base:Airbus" "base:Ryanair" "base:Qatar_Airways" "base:Traveler" "base:FirstClass" "base:Good" "base:Review" "base:VeryGood" "base:BusinessClass" "base:Seat" ; /*classes style*/
+	"base:SoloLeisure" -> "base:Traveler" [ label = "rdfs:subClassOf" ];
+	"base:Poor" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:Business" -> "base:Traveler" [ label = "rdfs:subClassOf" ];
+	"base:FirstClass" -> "base:Seat" [ label = "rdfs:subClassOf" ];
+	"base:BusinessClass" -> "base:Seat" [ label = "rdfs:subClassOf" ];
+	"base:VeryGood" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:Ryanair" -> "base:Company" [ label = "rdfs:subClassOf" ];
+	"base:CoupleLeisure" -> "base:Traveler" [ label = "rdfs:subClassOf" ];
+	"base:Good" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:BodyReview" -> "base:Review" [ label = "rdfs:subClassOf" ];
+	"base:FamilyLeisure" -> "base:Traveler" [ label = "rdfs:subClassOf" ];
+	"base:Airbus" -> "base:Plane" [ label = "rdfs:subClassOf" ];
+	"base:PremiumEconomy" -> "base:Seat" [ label = "rdfs:subClassOf" ];
+	"base:Qatar_Airways" -> "base:Company" [ label = "rdfs:subClassOf" ];
+	"base:VeryPoor" -> "base:Rating" [ label = "rdfs:subClassOf" ];
+	"base:Boeing" -> "base:Plane" [ label = "rdfs:subClassOf" ];
+	"base:EconomyClass" -> "base:Seat" [ label = "rdfs:subClassOf" ];
+
+}
